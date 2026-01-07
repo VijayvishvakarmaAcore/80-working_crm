@@ -1,0 +1,2089 @@
+{
+	"info": {
+		"_postman_id": "b6ee2d6b-dd20-4b0c-9477-1524fbc4fd4d",
+		"name": "Mediscript-Admin-dashboard",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45964668"
+	},
+	"item": [
+		{
+			"name": "ExamMode",
+			"item": [
+				{
+					"name": "Module",
+					"item": [
+						{
+							"name": "createModule",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Essentials of Clinical Medicine\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/admin/exammode/modules",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"exammode",
+										"modules"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllModules",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/admin/exammode/modules",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"exammode",
+										"modules"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getModuleById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/admin/exammode/modules/69019fe2b5e981e2efaf40c0",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"exammode",
+										"modules",
+										"69019fe2b5e981e2efaf40c0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateModule",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Foundations of Human Anatomy and Physiology\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/admin/exammode/modules/69019fe2b5e981e2efaf40c0",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"exammode",
+										"modules",
+										"69019fe2b5e981e2efaf40c0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteModule",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/admin/exammode/modules/69019fe2b5e981e2efaf40c0",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"exammode",
+										"modules",
+										"69019fe2b5e981e2efaf40c0"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "cases",
+					"item": [
+						{
+							"name": "addCase",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Detailed system-wise chapters\",\r\n  \"caseHistory\": \"cardiovascular, respiratory, endocrine, gastrointestinal, neurological, etc.\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/admin/exammode/modules/6901a114b5e981e2efaf47c8/cases",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"exammode",
+										"modules",
+										"6901a114b5e981e2efaf47c8",
+										"cases"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getCases",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/admin/exammode/modules/6901a114b5e981e2efaf47c8/cases",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"exammode",
+										"modules",
+										"6901a114b5e981e2efaf47c8",
+										"cases"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getCaseById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Appendicitis Case 1\",\r\n  \"caseHistory\": \"Patient presents with abdominal pain, nausea and vomiting.\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/admin/exammode/modules/6901a114b5e981e2efaf47c8/cases/6901a1bdb5e981e2efaf4ba7",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"exammode",
+										"modules",
+										"6901a114b5e981e2efaf47c8",
+										"cases",
+										"6901a1bdb5e981e2efaf4ba7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateCase",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Type 2 Diabetes Mellitus\",\r\n  \"caseHistory\": \"Increased thirst, frequent urination, and fatigue for 3 months.\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/admin/exammode/modules/6901a114b5e981e2efaf47c8/cases/6901a1bdb5e981e2efaf4ba7",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"exammode",
+										"modules",
+										"6901a114b5e981e2efaf47c8",
+										"cases",
+										"6901a1bdb5e981e2efaf4ba7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteCase",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/admin/exammode/modules/6901a114b5e981e2efaf47c8/cases/6901a1bdb5e981e2efaf4ba7",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"exammode",
+										"modules",
+										"6901a114b5e981e2efaf47c8",
+										"cases",
+										"6901a1bdb5e981e2efaf4ba7"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "topics",
+					"item": [
+						{
+							"name": "addTopic",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Detailed System-wise Chapters\",\r\n  \"content\": {\r\n    \"patientDemographics\": {\r\n      \"name\": \"Rahul Mehta\",\r\n      \"uhid\": \"UH202510\",\r\n      \"age\": 48,\r\n      \"gender\": \"Male\",\r\n      \"address\": \"B-204, Green Residency, Mumbai\",\r\n      \"contact\": \"9876543210\",\r\n      \"email\": \"rahul.mehta@example.com\",\r\n      \"referredBy\": \"Dr. A. Sharma\"\r\n    },\r\n    \"clinicalHistory\": {\r\n      \"chiefComplaint\": \"Recurrent chest pain and breathlessness on exertion\",\r\n      \"hpi\": \"Patient experiences chest tightness for the past 2 months, aggravated by physical activity and relieved by rest.\",\r\n      \"pastMedicalHistory\": \"Hypertension for 5 years, controlled on medication\",\r\n      \"allergies\": \"No known drug allergies\"\r\n    },\r\n    \"examinationVitals\": {\r\n      \"height\": 172,\r\n      \"weight\": 78,\r\n      \"bmi\": 26.3,\r\n      \"bp\": \"150/95\",\r\n      \"pulse\": 84,\r\n      \"temperature\": 98.4,\r\n      \"respiration\": 20,\r\n      \"spO2\": 97,\r\n      \"findings\": \"S4 gallop present; mild pedal edema noted\"\r\n    },\r\n    \"investigations\": {\r\n      \"labs\": \"CBC, Lipid Profile, Fasting Blood Sugar, Troponin I\",\r\n      \"imaging\": \"ECG shows ST depression in inferior leads; Echocardiogram shows mild LV hypertrophy\",\r\n      \"uploadReports\": [\"ecg_report.pdf\", \"echo_summary.jpg\"]\r\n    },\r\n    \"diagnosis\": {\r\n      \"provisional\": \"Stable Angina (Ischemic Heart Disease)\",\r\n      \"final\": \"\"\r\n    },\r\n    \"prescriptionCreation\": {\r\n      \"templateSearch\": \"Cardiovascular management\",\r\n      \"medicines\": [\r\n        \"Aspirin 75 mg once daily\",\r\n        \"Atorvastatin 20 mg at night\",\r\n        \"Metoprolol 25 mg twice daily\",\r\n        \"Sublingual Nitroglycerin 0.5 mg PRN for chest pain\"\r\n      ]\r\n    },\r\n    \"editPrescription\": {\r\n      \"medicines\": []\r\n    },\r\n    \"treatmentPlan\": {\r\n      \"lifestyleAdvice\": \"Low-fat diet, regular walking, avoid smoking and alcohol\",\r\n      \"proceduresReferrals\": \"Refer to cardiologist for stress test and further management\"\r\n    },\r\n    \"followUp\": {\r\n      \"notes\": \"Review after 2 weeks or earlier if chest pain worsens\",\r\n      \"nextAppointment\": \"2025-11-15T09:00:00.000Z\",\r\n      \"autoReminders\": true\r\n    },\r\n    \"caseHistory\": \"System-wise case example covering cardiovascular, respiratory, endocrine, gastrointestinal, and neurological systems. Each case highlights history, findings, and treatment approach.\",\r\n    \"outputPreview\": \"Patient diagnosed with stable angina; advised medical therapy, lifestyle modification, and cardiology follow-up.\"\r\n  }\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/admin/exammode/modules/6901a114b5e981e2efaf47c8/cases/6901a3b4b5e981e2efaf4e33/topics",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"exammode",
+										"modules",
+										"6901a114b5e981e2efaf47c8",
+										"cases",
+										"6901a3b4b5e981e2efaf4e33",
+										"topics"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getTopics",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/admin/exammode/modules/6901a114b5e981e2efaf47c8/cases/6901a3b4b5e981e2efaf4e33/topics",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"exammode",
+										"modules",
+										"6901a114b5e981e2efaf47c8",
+										"cases",
+										"6901a3b4b5e981e2efaf4e33",
+										"topics"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getTopicById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/admin/exammode/modules/6901a114b5e981e2efaf47c8/cases/6901a3b4b5e981e2efaf4e33/topics/6901a481b5e981e2efaf4e42",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"exammode",
+										"modules",
+										"6901a114b5e981e2efaf47c8",
+										"cases",
+										"6901a3b4b5e981e2efaf4e33",
+										"topics",
+										"6901a481b5e981e2efaf4e42"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateTopic",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Updated Medication Review Topic\",\r\n  \"content\": {\r\n    \"diagnosis\": {\r\n      \"final\": \"Confirmed Chronic Obstructive Pulmonary Disease (COPD)\"\r\n    },\r\n    \"prescriptionCreation\": {\r\n      \"medicines\": [\r\n        \"Tiotropium 18 mcg inhalation once daily\",\r\n        \"Salbutamol inhaler as needed\",\r\n        \"Prednisolone 10mg for 5 days\"\r\n      ]\r\n    },\r\n    \"treatmentPlan\": {\r\n      \"lifestyleAdvice\": \"Continue smoking cessation, regular exercise, and avoid dust exposure\",\r\n      \"proceduresReferrals\": \"Follow up with pulmonologist after 2 weeks\"\r\n    },\r\n    \"followUp\": {\r\n      \"notes\": \"Check response to bronchodilators and review spirometry results\",\r\n      \"nextAppointment\": \"2025-12-15T10:00:00.000Z\",\r\n      \"autoReminders\": true\r\n    }\r\n  }\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/admin/exammode/modules/6901a114b5e981e2efaf47c8/cases/6901a3b4b5e981e2efaf4e33/topics/6901a481b5e981e2efaf4e42",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"exammode",
+										"modules",
+										"6901a114b5e981e2efaf47c8",
+										"cases",
+										"6901a3b4b5e981e2efaf4e33",
+										"topics",
+										"6901a481b5e981e2efaf4e42"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteTopic",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/admin/exammode/modules/6901a114b5e981e2efaf47c8/cases/6901a3b4b5e981e2efaf4e33/topics/6901a481b5e981e2efaf4e42",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"exammode",
+										"modules",
+										"6901a114b5e981e2efaf47c8",
+										"cases",
+										"6901a3b4b5e981e2efaf4e33",
+										"topics",
+										"6901a481b5e981e2efaf4e42"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getStudentPerformance",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{drazetlandloard_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/admin/exammode/performance",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"exammode",
+								"performance"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Certificate",
+			"item": [
+				{
+					"name": "issueModuleCertificate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{drazetlandloard_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"studentId\": \"68ef2ae484a8b8974b2b0ba6\",\r\n  \"moduleId\": \"68fb02d7226f5416545aad76\",\r\n  \"score\": 85,\r\n  \"grade\": \"A\",\r\n  \"details\": {\r\n    \"correct\": 8,\r\n    \"wrongDose\": 1,\r\n    \"unsafeDrug\": 0,\r\n    \"missedDrug\": 1,\r\n    \"timePerCase\": \"5 min\"\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/admin/certificates/module",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"certificates",
+								"module"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "generateCourseCertificate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{drazetlandloard_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"studentId\": \"68e4f510ba739fa57a2988cd\",\r\n  \"score\": 90,\r\n  \"grade\": \"A+\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/admin/certificates/course",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"admin",
+								"certificates",
+								"course"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllCertificates",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{drazetlandloard_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/admin/certificates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"admin",
+								"certificates"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Template&contentmanagemnetcontrollers",
+			"item": [
+				{
+					"name": "ADMIN REVIEW DOCTOR PRESCRIPTIONS",
+					"item": [
+						{
+							"name": "getDoctorPrescriptionsForReview",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/admin/prescriptions/admin/doctor-prescriptions/pending",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"prescriptions",
+										"admin",
+										"doctor-prescriptions",
+										"pending"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "adminReviewDoctorPrescription",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"approve\": true,\r\n  \"comments\": \"Verified and approved for patient treatment.\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/admin/prescriptions/admin/doctor-prescriptions/68e8a706abba2dc13c448e34/review",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"prescriptions",
+										"admin",
+										"doctor-prescriptions",
+										"68e8a706abba2dc13c448e34",
+										"review"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getTemplateUsageByDoctors",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/admin/prescriptions/admin/templates/68e79526cdbe28172165e1c7/usage",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"prescriptions",
+										"admin",
+										"templates",
+										"68e79526cdbe28172165e1c7",
+										"usage"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "createPrescription",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{drazetlandloard_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"disease\": \"Heart Attack\",\r\n  \"system\": \"Cardiology\",\r\n  \"tags\": [\"hypertension\", \"cardiology\", \"bp\"],\r\n  \"templates\": [\r\n    {\r\n      \"language\": \"en\",\r\n      \"clinicalHistory\": {\r\n        \"chiefComplaint\": \"High blood pressure detected during routine check-up.\",\r\n        \"investigations\": \"Blood pressure, ECG, Lipid profile\",\r\n        \"diagnosis\": {\r\n          \"provisional\": \"Essential Hypertension\",\r\n          \"final\": \"Stage 1 Hypertension\"\r\n        }\r\n      },\r\n      \"treatmentPlan\": {\r\n        \"prescription\": [\r\n          {\r\n            \"serial\": 1,\r\n            \"brandName\": \"Amlodipine\",\r\n            \"genericName\": \"Amlodipine\",\r\n            \"route\": \"Oral\",\r\n            \"dose\": \"5 mg\",\r\n            \"duration\": \"30 days\",\r\n            \"timings\": \"Morning\",\r\n            \"notes\": \"Monitor BP regularly\"\r\n          }\r\n        ],\r\n        \"lifestyleAdvice\": {\r\n          \"text\": \"Reduce salt intake, exercise regularly\"\r\n        },\r\n        \"procedures\": \"ECG monitoring\",\r\n        \"referrals\": \"Cardiology consultation if uncontrolled\"\r\n      }\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/admin/templates",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"templates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllPrescriptions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{drazetlandloard_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/admin/templates",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"templates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePrescription",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{drazetlandloard_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"system\": \"Cardiology\",\r\n  \"disease\": \"Type 2 Diabetes Mellitus\",\r\n  \"templateName\": \"Diabetes Lifestyle Plan\",\r\n  \"template\": \"Updated treatment plan and follow-up instructions...\",\r\n  \"tags\": [\"diabetes\", \"blood-sugar\", \"endocrinology\"],\r\n  \"isActive\": true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/admin/templates/6900bf027c5ca05d25b77f15",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"templates",
+								"6900bf027c5ca05d25b77f15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePrescription",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{drazetlandloard_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/admin/prescriptions/admin/templates/68e379760c04cc7662462eb6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"prescriptions",
+								"admin",
+								"templates",
+								"68e379760c04cc7662462eb6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPrescriptionById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{drazetlandloard_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/admin/prescriptions/admin/templates/68e788a847d043e6993506ac",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"admin",
+								"prescriptions",
+								"admin",
+								"templates",
+								"68e788a847d043e6993506ac"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSubmittedDoctorTemplates",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{drazetlandloard_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/admin/submitted",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"admin",
+								"submitted"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getApprovedTemplates",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{drazetlandloard_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"approved\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/admin/68f46bf873aed7c7b324be4e/review",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"admin",
+								"68f46bf873aed7c7b324be4e",
+								"review"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Readmode",
+			"item": [
+				{
+					"name": "System",
+					"item": [
+						{
+							"name": "createSystem",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Essentials of Clinical Medicine\",\r\n  \"description\": \"Essentials of Clinical Medicine provides a comprehensive overview of core clinical principles, diagnostic methods, and patient management strategies across all major systems. It serves as a practical guide for medical students and clinicians to develop strong clinical reasoning, examination skills, and evidence-based treatment approaches.\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/admin/systems",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"systems"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllSystems",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/admin/systems",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"systems"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getSystemById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/admin/systems/6901ba2380d671703b7343ea",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"systems",
+										"6901ba2380d671703b7343ea"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateSystem",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Harrison’s Principles of Internal Medicine\",\r\n  \"description\": \"Harrison’s Principles of Internal Medicine is one of the most trusted and comprehensive references in clinical medicine. It covers the scientific foundations and clinical applications of internal medicine, integrating pathophysiology with diagnosis and management of diseases across all organ systems.\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/admin/systems/6901ba2380d671703b7343ea",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"systems",
+										"6901ba2380d671703b7343ea"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteSystem",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/admin/systems/6901ba2380d671703b7343ea",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"systems",
+										"6901ba2380d671703b7343ea"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Module",
+					"item": [
+						{
+							"name": "addModule",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Cardiovascular System\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/admin/systems/6901bbc980d671703b7343fa/modules",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"systems",
+										"6901bbc980d671703b7343fa",
+										"modules"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllModules",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/admin/systems/modules",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"systems",
+										"modules"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getModuleById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/admin/modules/6901be145aa2cc72d0dd7bfa",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"modules",
+										"6901be145aa2cc72d0dd7bfa"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateModule",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Endocrine System\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/admin/modules/6901be145aa2cc72d0dd7bfa",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"modules",
+										"6901be145aa2cc72d0dd7bfa"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteModule",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/admin/systems/6901bbc980d671703b7343fa/modules/6901be145aa2cc72d0dd7bfa",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"systems",
+										"6901bbc980d671703b7343fa",
+										"modules",
+										"6901be145aa2cc72d0dd7bfa"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Chapter",
+					"item": [
+						{
+							"name": "addChapter",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"title\": \"Anatomy and Physiology of the Heart\"\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/admin/modules/6901c1ed5aa2cc72d0dd7c14/chapters",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"modules",
+										"6901c1ed5aa2cc72d0dd7c14",
+										"chapters"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllChapters",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/admin/chapters",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"chapters"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getChapterById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/admin/chapters/6901c20e5aa2cc72d0dd7c1e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"chapters",
+										"6901c20e5aa2cc72d0dd7c1e"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateChapter",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"title\": \"History Taking and Cardiovascular Examination\"\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/admin/chapters/6901c20e5aa2cc72d0dd7c1e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"chapters",
+										"6901c20e5aa2cc72d0dd7c1e"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteChapter",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/admin/modules/6901c1ed5aa2cc72d0dd7c14/chapters/6901c20e5aa2cc72d0dd7c1e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"modules",
+										"6901c1ed5aa2cc72d0dd7c14",
+										"chapters",
+										"6901c20e5aa2cc72d0dd7c1e"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Section",
+					"item": [
+						{
+							"name": "addSections",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Introduction",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "This section provides a brief overview of the disease including epidemiology and pathophysiology.",
+											"type": "text"
+										},
+										{
+											"key": "isActive",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "images",
+											"type": "file",
+											"src": "postman-cloud:///1f0b4b1f-5279-4b30-9e81-bef9643f7de7"
+										},
+										{
+											"key": "flowcharts",
+											"type": "file",
+											"src": "postman-cloud:///1f0b4b20-1df3-48b0-917e-ece2edb3710e"
+										},
+										{
+											"key": "pdfs",
+											"type": "file",
+											"src": "postman-cloud:///1f0b4b20-e2ca-42b0-9f63-d27eef38266b"
+										},
+										{
+											"key": "videos",
+											"type": "file",
+											"src": "postman-cloud:///1f0b4b23-3844-4450-92e0-cf8d561ecbd6"
+										},
+										{
+											"key": "sectionType",
+											"value": "Introduction",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/admin/chapters/6901c8f25aa2cc72d0dd7c30/sections",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"chapters",
+										"6901c8f25aa2cc72d0dd7c30",
+										"sections"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllSections",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/admin/sections",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"sections"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getSectionById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/admin/chapters/6901c8f25aa2cc72d0dd7c30/sections/6901f8b70a5fd2928e7dc553",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"chapters",
+										"6901c8f25aa2cc72d0dd7c30",
+										"sections",
+										"6901f8b70a5fd2928e7dc553"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateSection",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "investigation",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "This section now includes a detailed overview with pathophysiology updates.",
+											"type": "text"
+										},
+										{
+											"key": "isActive",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "images",
+											"type": "file",
+											"src": "postman-cloud:///1f0b4ba8-f516-4bc0-9e30-f1bec0c2edce"
+										},
+										{
+											"key": "flowcharts",
+											"type": "file",
+											"src": "postman-cloud:///1f0b4baf-22eb-4770-8262-b3588631a226"
+										},
+										{
+											"key": "pdfs",
+											"type": "file",
+											"src": "postman-cloud:///1f0b4bb1-3d3b-4150-b22a-8595ba9288d5"
+										},
+										{
+											"key": "videos",
+											"type": "file",
+											"src": "postman-cloud:///1f0b4bb2-7ad5-43c0-ad2f-344debb914d6"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/admin/chapters/6901c8f25aa2cc72d0dd7c30/sections/6901f8b70a5fd2928e7dc553",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"chapters",
+										"6901c8f25aa2cc72d0dd7c30",
+										"sections",
+										"6901f8b70a5fd2928e7dc553"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteSection",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{drazetlandloard_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/admin/chapters/6901c8f25aa2cc72d0dd7c30/sections/6901f8b70a5fd2928e7dc553",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"admin",
+										"chapters",
+										"6901c8f25aa2cc72d0dd7c30",
+										"sections",
+										"6901f8b70a5fd2928e7dc553"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "createSystem",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{drazetlandloard_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Diabetes Mellitus — Type 2\",\r\n  \"description\": \"Type 2 Diabetes Mellitus (T2DM) is a chronic metabolic disorder characterized by insulin resistance and relative insulin deficiency, leading to persistent hyperglycemia.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/admin/systems",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"systems"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addModule",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{drazetlandloard_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Metabolic Disorders\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/admin/systems/68ff4735942e946dd1e7639f/modules",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"systems",
+								"68ff4735942e946dd1e7639f",
+								"modules"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addChapter",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{drazetlandloard_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Type 2 Diabetes Mellitus (T2DM)\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/admin/modules/68ff4789942e946dd1e763a2/chapters",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"modules",
+								"68ff4789942e946dd1e763a2",
+								"chapters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addSections",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{drazetlandloard_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Type 2 Diabetes Mellitus\",\r\n  \"sections\": [\r\n    {\r\n      \"title\": \"Introduction\",\r\n      \"content\": \"Type 2 Diabetes Mellitus (T2DM) is a chronic metabolic disorder characterized by insulin resistance and relative insulin deficiency. It results in persistent hyperglycemia that affects multiple organ systems. The disease commonly develops in adults above 40 years but is increasingly seen in younger individuals due to obesity and sedentary lifestyle. Pathophysiologically, insulin resistance occurs primarily in muscle, liver, and adipose tissue, while pancreatic β-cell dysfunction leads to inadequate insulin secretion. Both genetic and environmental factors contribute to disease onset. India, being the 'Diabetes Capital of the World', reports nearly 80 million adults with diabetes (ICMR 2024).\",\r\n      \"images\": [\"/images/diabetes-intro.jpg\"],\r\n      \"flowcharts\": []\r\n    },\r\n    {\r\n      \"title\": \"Clinical Features\",\r\n      \"content\": \"Common symptoms include polyuria (frequent urination), polydipsia (excessive thirst), and polyphagia (increased hunger). Patients may also complain of weight loss, fatigue, blurred vision, and recurrent infections (especially urinary tract and skin). In some cases, T2DM is asymptomatic and diagnosed incidentally during health checkups. On examination, signs may include central obesity, acanthosis nigricans, and peripheral neuropathy. \\n\\nExample Case: A 46-year-old male presents with fatigue, increased urination, and blurred vision for 3 months. His random blood glucose is 278 mg/dL. This represents a typical undiagnosed case of T2DM.\",\r\n      \"images\": [\"/images/diabetes-symptoms.jpg\"],\r\n      \"flowcharts\": []\r\n    },\r\n    {\r\n      \"title\": \"Investigations\",\r\n      \"content\": \"1. **Screening Tests**:\\n   - Fasting Plasma Glucose (FPG) ≥126 mg/dL\\n   - 2-hour Plasma Glucose ≥200 mg/dL during OGTT\\n   - HbA1c ≥6.5%\\n   - Random Plasma Glucose ≥200 mg/dL with classic symptoms\\n\\n2. **Baseline Work-up**:\\n   - CBC, Renal and Liver Function Tests\\n   - Lipid Profile\\n   - Urine Routine & Microalbuminuria\\n   - ECG (baseline cardiovascular evaluation)\\n   - Fundus Examination\\n\\n3. **Special Tests**:\\n   - C-peptide (for insulin reserve)\\n   - Autoantibody panel (if type 1 or LADA suspected)\\n\\nInterpretation: Any one of the above abnormal tests on two occasions confirms diabetes.\",\r\n      \"images\": [],\r\n      \"flowcharts\": [\"/flowcharts/diabetes-diagnosis.png\"]\r\n    },\r\n    {\r\n      \"title\": \"Classification / Staging\",\r\n      \"content\": \"According to ADA (2025):\\n\\n1. Type 1 Diabetes Mellitus\\n2. Type 2 Diabetes Mellitus\\n3. Gestational Diabetes Mellitus (GDM)\\n4. Other Specific Types (e.g., MODY, secondary to drugs, pancreatic disease)\\n\\n**Stages of T2DM:**\\n- Stage 1: Insulin resistance without hyperglycemia\\n- Stage 2: Impaired glucose tolerance (prediabetes)\\n- Stage 3: Overt diabetes (symptomatic)\\n- Stage 4: Diabetes with complications (microvascular/macrovascular)\",\r\n      \"images\": [],\r\n      \"flowcharts\": [\"/flowcharts/diabetes-stages.png\"]\r\n    },\r\n    {\r\n      \"title\": \"Guideline Highlights\",\r\n      \"content\": \"**From ADA 2025 and ICMR 2024:**\\n\\n- Lifestyle modification is the cornerstone of therapy.\\n- First-line drug: Metformin (unless contraindicated).\\n- If HbA1c >7% after 3 months, add a second agent (SGLT2 inhibitor, DPP-4 inhibitor, or GLP-1 agonist).\\n- Blood Pressure Target: <130/80 mmHg.\\n- LDL Target: <70 mg/dL for high-risk patients.\\n- Encourage self-monitoring of blood glucose (SMBG) or continuous glucose monitoring (CGM).\",\r\n      \"images\": [],\r\n      \"flowcharts\": [\"/flowcharts/diabetes-management.png\"]\r\n    },\r\n    {\r\n      \"title\": \"Prescriptions\",\r\n      \"content\": \"**Example Prescription Template:**\\n\\n| Drug | Dose | Frequency | Duration |\\n|------|------|------------|-----------|\\n| Metformin 500 mg | 1 tablet | Twice daily | Continuous |\\n| Glimepiride 1 mg | 1 tablet | Once daily | Continuous |\\n| Atorvastatin 10 mg | 1 tablet | Once at night | Continuous |\\n\\n**Advice:** Monitor fasting and postprandial sugar weekly initially; adjust dose based on control. Avoid hypoglycemia.\",\r\n      \"images\": [],\r\n      \"flowcharts\": []\r\n    },\r\n    {\r\n      \"title\": \"Monitoring & Follow-up\",\r\n      \"content\": \"Follow-up every 3 months with HbA1c check. Monitor blood pressure, lipid profile, and renal function every 6–12 months. Annual fundus and foot examination are mandatory.\\n\\n**Red Flags:**\\n- Sudden vision changes\\n- Persistent non-healing foot ulcers\\n- Recurrent hypoglycemia\\n- Weight loss despite good control\",\r\n      \"images\": [\"/images/followup-chart.png\"],\r\n      \"flowcharts\": []\r\n    },\r\n    {\r\n      \"title\": \"Patient Counselling\",\r\n      \"content\": \"Educate the patient about:\\n- Balanced diet: Low sugar, high fiber, controlled carbohydrates.\\n- Exercise: 150 min/week moderate-intensity activity.\\n- Foot care: Daily inspection, soft footwear.\\n- Avoid smoking and alcohol.\\n- Importance of regular follow-ups and medication adherence.\\n\\nProvide visual materials or handouts to reinforce education.\",\r\n      \"images\": [\"/images/diet-chart.jpg\", \"/images/footcare.png\"],\r\n      \"flowcharts\": []\r\n    },\r\n    {\r\n      \"title\": \"Practice Cases\",\r\n      \"content\": \"**Case 1:** Newly diagnosed 40-year-old male with HbA1c 7.8% — Start on lifestyle + Metformin.\\n\\n**Case 2:** 58-year-old female with HbA1c 9.2% and hypertension — Start Metformin + SGLT2 inhibitor + ACE inhibitor.\\n\\n**Case 3:** 65-year-old obese male with nephropathy — Metformin contraindicated; start DPP-4 inhibitor + insulin.\",\r\n      \"images\": [],\r\n      \"flowcharts\": []\r\n    },\r\n    {\r\n      \"title\": \"Nursing Protocols\",\r\n      \"content\": \"1. Monitor blood glucose before meals and at bedtime.\\n2. Maintain intake-output and BP chart.\\n3. Watch for signs of hypoglycemia (sweating, confusion, tremors).\\n4. Maintain asepsis during insulin injection.\\n5. Educate patient on insulin self-administration.\",\r\n      \"images\": [\"/images/nursing-chart.png\"],\r\n      \"flowcharts\": []\r\n    },\r\n    {\r\n      \"title\": \"Flowcharts\",\r\n      \"content\": \"Important diagnostic and treatment algorithms are presented below.\",\r\n      \"images\": [],\r\n      \"flowcharts\": [\r\n        \"/flowcharts/diabetes-overview.png\",\r\n        \"/flowcharts/diabetes-treatment.png\"\r\n      ]\r\n    },\r\n    {\r\n      \"title\": \"Brilliant Ideas for Future Doctors\",\r\n      \"content\": \"Explore AI-driven glucose monitors, mobile-based diet tracking, and telemedicine follow-ups. Digital health integration in diabetes care improves adherence and early complication detection. Encourage innovative research in wearable sensors and closed-loop insulin systems.\",\r\n      \"images\": [\"/images/ai-health.jpg\"],\r\n      \"flowcharts\": []\r\n    },\r\n    {\r\n      \"title\": \"Key Takeaways\",\r\n      \"content\": \"1. T2DM = Insulin resistance + β-cell dysfunction.\\n2. Metformin remains first-line therapy.\\n3. Early lifestyle modification can reverse prediabetes.\\n4. Monitor HbA1c every 3 months.\\n5. Prevent complications with good glycemic and BP control.\",\r\n      \"images\": [],\r\n      \"flowcharts\": []\r\n    },\r\n    {\r\n      \"title\": \"References\",\r\n      \"content\": \"1. American Diabetes Association. Standards of Care in Diabetes — 2025.\\n2. ICMR Guidelines for Management of Type 2 Diabetes, 2024.\\n3. Harrison’s Principles of Internal Medicine, 21st Edition.\\n4. API Textbook of Medicine, 11th Edition.\",\r\n      \"images\": [],\r\n      \"flowcharts\": []\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/admin/chapters/68ff47cc942e946dd1e763a7/sections",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"chapters",
+								"68ff47cc942e946dd1e763a7",
+								"sections"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
